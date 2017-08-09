@@ -7,7 +7,8 @@ import { IProduit } from "../models/iproduit";
   styleUrls: ['./products-list.component.css']
 })
 export class ProductsListComponent implements OnInit {
-  showImage: boolean = false;
+  pageTitle: string = 'Product List';
+  showImage: boolean = true;
   listFilter: string = '';
   produits: IProduit[];
   constructor() {
@@ -52,4 +53,9 @@ export class ProductsListComponent implements OnInit {
   toggleImage(): void {
     this.showImage = !this.showImage;
   }
+
+    onRatingClicked(message: string): void {
+    this.pageTitle = 'Product List: ' + message;
+  }
+
 }
