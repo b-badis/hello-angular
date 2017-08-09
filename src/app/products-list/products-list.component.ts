@@ -20,7 +20,7 @@ export class ProductsListComponent implements OnInit {
         prixUnitaire: 1.5,
         imageUrl: "https://openclipart.org/image/50px/svg_to_png/103015/1293946919.png",
         description: "empty",
-        starRating: 4.2,
+        starRating: 2.5,
       },
       {
         code: "P200",
