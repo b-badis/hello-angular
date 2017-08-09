@@ -1,10 +1,10 @@
-import { AngularTrainingProductManagementPage } from './app.po';
+import { HelloAngularPage } from './app.po';
 
-describe('angular-training-product-management App', () => {
-  let page: AngularTrainingProductManagementPage;
+describe('hello-angular App', () => {
+  let page: HelloAngularPage;
 
   beforeEach(() => {
-    page = new AngularTrainingProductManagementPage();
+    page = new HelloAngularPage();
   });
 
   it('should display welcome message', () => {
