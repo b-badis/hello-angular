@@ -5,14 +5,16 @@ import { AppComponent } from './app.component';
 import { ProductsListComponent } from './products-list/products-list.component';
 import { ProductFilterPipe } from './pipes/product-filter.pipe';
 import { StarComponent } from "./shared/star/star.component";
+import { ProductAddComponent } from './products-add/product-add.component';
+import { HttpModule } from "@angular/http";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsListComponent,ProductFilterPipe,StarComponent
+    ProductsListComponent,ProductFilterPipe,StarComponent,ProductAddComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule,FormsModule, HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
